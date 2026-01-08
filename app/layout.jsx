@@ -10,11 +10,11 @@ export const metadata = {
   openGraph: {
     title: 'TubiMovie | Complete Movie & TV Series Database',
     description: 'Your ultimate destination for movies, TV series, actor profiles, and streaming information. Explore genres, yearly archives, and top rankings.',
-    url: 'https://TubiMovie-id.vercel.app/',
+    url: 'https://tubimovie.netlify.app',
     siteName: 'TubiMovie',
     images: [
       {
-        url: 'https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg',
+        url: 'https://live.staticflickr.com/65535/55030534731_a799877959_b.jpg',
         width: 1200,
         height: 630,
         alt: 'TubiMovie - Complete Movie Database',
@@ -29,7 +29,7 @@ export const metadata = {
     creator: '@WatchStream123',
     title: 'TubiMovie | Complete Movie & TV Series Database',
     description: 'Explore 10,000+ movies, 5,000+ TV series, actor profiles, and streaming guides on TubiMovie.',
-    images: ['https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg'],
+    images: ['https://live.staticflickr.com/65535/55030534731_a799877959_b.jpg'],
   },
   // Tambahkan tag meta eksplisit untuk Facebook
   other: {
@@ -52,10 +52,10 @@ export default function RootLayout({ children }) {
               "@type": "MovieDatabase",
               "name": "TubiMovie",
               "description": "Complete movie and TV series database with streaming information",
-              "url": "https://TubiMovie-id.vercel.app/",
-              "logo": "https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg",
+              "url": "https://tubimovie.netlify.app",
+              "logo": "https://live.staticflickr.com/65535/55030534731_a799877959_b.jpg",
               "sameAs": [
-                "https://TubiMovie-id.vercel.app/"
+                "https://tubimovie.netlify.app"
               ]
             })
           }}

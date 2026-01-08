@@ -40,17 +40,17 @@ export async function generateMetadata({ params }) {
 
   const title = genre?.name || 'Unknown';
   
-  const pageUrl = `https://Juswatch-id.vercel.app/tv-show/genre/${genreName}`;
-  const imageUrl = 'https://live.staticflickr.com/65535/54797489364_45a23b2498_b.jpg';
+  const pageUrl = `https://tubimovie.netlify.app/tv-show/genre/${genreName}`;
+  const imageUrl = 'https://live.staticflickr.com/65535/55030534731_a799877959_b.jpg';
 
   return {
-    title: `Juswatch - ${title} TV Series`,
-    description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+    title: `TubiMovie - ${title} TV Series`,
+    description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
     openGraph: {
-      title: `Juswatch - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+      title: `TubiMovie - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
       url: pageUrl,
-      siteName: 'Juswatch',
+      siteName: 'TubiMovie',
       images: [
         {
           url: imageUrl,
@@ -66,8 +66,8 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       site: '@WatchStream123',
       creator: '@WatchStream123',
-      title: `Juswatch - ${title} TV Series`,
-      description: `Find and watch the best ${title} TV series for free on Juswatch.`,
+      title: `TubiMovie - ${title} TV Series`,
+      description: `Find and watch the best ${title} TV series for free on TubiMovie.`,
       images: [imageUrl],
     },
     other: {
