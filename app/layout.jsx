@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import AdsterraLayoutWrapper from '../components/AdsterraLayoutWrapper';
+import AdBanner from '../components/ads/AdBanner'; // ✅ Komponen baru untuk banner
 
 export const metadata = {
   title: 'TubiMovie | Watch Movies, Stream TV Series Free - Complete Movie Database',
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 	  <head>
         {/* Tag verifikasi Google Search Console */}
-        <meta name="google-site-verification" content="pcDPx7-udVGR4mfWJrZgQRfLqHGa_oYsnyjr2VLAlAI" />
+        <meta name="google-site-verification" content="TRTCvA_QqXkUM0PnLWGy2GVhJjJsoZzU7D5kUmp8A0Q" />
         {/* Schema.org markup untuk Movie Database */}
         <script
           type="application/ld+json"
@@ -67,9 +68,24 @@ export default function RootLayout({ children }) {
             <header className="w-full max-w-7xl mx-auto px-4 py-4 sticky top-0 z-50 bg-slate-900 shadow-lg">
               <Navbar />
             </header>
+            
+            {/* ✅ Banner 728x90 di bawah navbar */}
+            <div className="w-full bg-slate-900 py-2">
+              <div className="max-w-7xl mx-auto px-4 flex justify-center">
+                <AdBanner 
+                  adId="728x90_banner_navbar"
+                  scriptKey="08ce285c921a800b8765a63afff65c89"
+                  height={90}
+                  width={728}
+                  className="rounded-lg overflow-hidden shadow-lg"
+                />
+              </div>
+            </div>
+            
             <main className="flex-grow w-full max-w-7xl mx-auto px-4 py-8 mt-2">
               {children}
             </main>
+            
             <footer className="w-full max-w-7xl mx-auto px-4 py-8">
               {/* Tempatkan div Native Banner di sini, sebelum Footer */}
               <div id="container-e527b94a54d2e891ac3b8739485cbc7b"></div>
